@@ -1,5 +1,8 @@
 # RocksDB_study
 
+### LFS
+Log-Structed File System
+
 ### JBOB vs RAID
 - JBOB  
 : 각각의 디스크마다 독립적인 FS이 존재하는 형태. 그냥 용량만 늘어난 것이 전부
