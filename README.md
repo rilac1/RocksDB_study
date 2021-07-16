@@ -34,3 +34,13 @@ Index & Filter Block 확인 -> offset 찾기
 
 ### Compaction
 : Key-range가 겹치는 블럭을 메모리로 올리고 Merge Sorting 후 다시 Flush
+
+## YCSB
+> load
+```
+./bin/ycsb load rocksdb -s -P workloads/workloada -p rocksdb.dir=../ycsb-data -p recordcount=10000
+```
+> run
+```
+./bin/ycsb run rocksdb -s -P workloads/workloada -p rocksdb.dir=../ycsb-data -p operationcount=10000
+```
