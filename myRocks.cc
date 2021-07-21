@@ -16,8 +16,7 @@ int main() {
     DB* db;
     Options options;
     options.create_if_missing = true;
-    Status status =
-    DB::Open(options, "../../myRocks/data", &db);
+    Status status = DB::Open(options, "../data", &db);
     assert(status.ok());
 
     options.error_if_exists = true;
